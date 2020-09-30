@@ -4,7 +4,7 @@ description: ลองส่งรูปให้ AI สาธยายดูด
 
 # เขียนแอพให้ AI อธิบายรูปเป็นภาษาคน
 
-![](../../.gitbook/assets/image%20%28435%29.png)
+![](../../.gitbook/assets/image%20%28923%29.png)
 
 ในรอบนี้เราจะลองเขียนโค้ดส่งรูปให้ AI แล้วให้มันบอกเราเป็นภาษาคนดูซิว่ามันเห็นอะไรในรูปบ้าง? ซึ่งการที่จะทำแบบนี้ได้ผมจะใช้ AI สำเร็จรูปของ **Microsoft Azure** ที่ชื่อว่า **Cognitive Services** ครับ
 
@@ -76,7 +76,7 @@ Url ของรูป
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "categories": [
     {
@@ -214,8 +214,7 @@ Url ของรูป
 
 ส่วนโค้ดที่ที่ใช้ก็จะเขียนภายใน method Main\(\) ออกมาราวๆนี้
 
-{% code-tabs %}
-{% code-tabs-item title="Program.cs" %}
+{% code title="Program.cs" %}
 ```csharp
 var analyzieImageRequest = CreateRestRequest("vision/v2.1/analyze?visualFeatures=Description&language=en", new
 {
@@ -236,8 +235,7 @@ else
     System.Console.WriteLine($"Error: {analyzieImageResult.Content}");
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **อธิบายโค้ด**  
 ในตัวอย่างผมก็จะทำการเรียก Cognitive Services API ออกไป แล้วพอได้รับผลลัพท์กลับมาก็ทำการแปลง Json ออกมาเป็นข้อความที่เขาส่งกลับมาแสดงผล

@@ -31,7 +31,7 @@ description: บอกลาการ login แบบเดิมๆไปได
 5. สั่งให้ AI เรียนรูปว่ารูปใน Person นั้นหน้าตาเป็นยังไง \(เราเรียขั้นตอนนี้ว่า **Train Model**\)
 6. ทดลองเอารูปที่จะใช้ Login ไปให้ AI ดูว่าเป็นคนเดียวกับที่อยู่ใน Person นั้นหรือเปล่า
 
-จากที่ว่ามาเราก็จะเริ่มทำทีละขั้นตอนกันเลย เพื่อทำระบบ Login ด้วยใบหน้ากัน ปะลุยๆ 
+จากที่ว่ามาเราก็จะเริ่มทำทีละขั้นตอนกันเลย เพื่อทำระบบ Login ด้วยใบหน้ากัน ปะลุยๆ
 
 ## 🔥 \(1\) สร้าง Face Service กัน
 
@@ -42,47 +42,52 @@ description: บอกลาการ login แบบเดิมๆไปได
 
 1.หลังจากที่ Login เข้ามาละ ที่เมนูด้านซ้ายมือให้เลือก **`+ Create a resource`** ซะ แล้วเมนูในหน้าตรงกลางให้เลือก **`AI + Machine Learning`** แล้วจะเห็น **`Face`** ให้จิ้มมันเข้าไปเบย
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](../../.gitbook/assets/image%20%2841%29.png)
 
 2.ถัดมาก็ใส่รายละเอียดของ Face Service ให้เรียบร้อยซะ แล้วก็กดปุ่ม **`Create`** ได้เลย
+
+| ชื่อ | รายละเอียด |
+| :--- | :--- |
+
+
+| Name | ชื่อ Face Service ที่จะสร้าง |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xE0A;&#xE37;&#xE48;&#xE2D;</th>
-      <th style="text-align:left">&#xE23;&#xE32;&#xE22;&#xE25;&#xE30;&#xE40;&#xE2D;&#xE35;&#xE22;&#xE14;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Name</td>
-      <td style="text-align:left">&#xE0A;&#xE37;&#xE48;&#xE2D; Face Service &#xE17;&#xE35;&#xE48;&#xE08;&#xE30;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Location</td>
-      <td style="text-align:left">
+      <th style="text-align:left">Location</th>
+      <th style="text-align:left">
         <p>&#xE15;&#xE31;&#xE27; service &#xE19;&#xE35;&#xE49;&#xE08;&#xE30;&#xE2A;&#xE23;&#xE49;&#xE32;&#xE07;&#xE44;&#xE27;&#xE49;&#xE20;&#xE39;&#xE21;&#xE34;&#xE20;&#xE32;&#xE04;&#xE44;&#xE2B;&#xE19;</p>
         <p>&#xE43;&#xE19;&#xE15;&#xE31;&#xE27;&#xE2D;&#xE22;&#xE48;&#xE32;&#xE07;&#xE1C;&#xE21;&#xE40;&#xE25;&#xE48;&#xE19;&#xE43;&#xE19;&#xE44;&#xE17;&#xE22;&#xE01;&#xE47;&#xE40;&#xE25;&#xE37;&#xE2D;&#xE01;&#xE40;&#xE1B;&#xE47;&#xE19;
           Southeast Asia</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">Pricing tier</td>
-      <td style="text-align:left">
+      <th style="text-align:left">Pricing tier</th>
+      <th style="text-align:left">
         <p>&#xE08;&#xE30;&#xE43;&#xE2B;&#xE49;&#xE40;&#xE02;&#xE32;&#xE40;&#xE01;&#xE47;&#xE1A;&#xE40;&#xE07;&#xE34;&#xE19;&#xE40;&#xE23;&#xE32;&#xE41;&#xE1A;&#xE1A;&#xE44;&#xE2B;&#xE19;</p>
         <p>&#xE16;&#xE49;&#xE32;&#xE08;&#xE30;&#xE25;&#xE2D;&#xE07;&#xE40;&#xE25;&#xE48;&#xE19;&#xE40;&#xE09;&#xE22;&#xE46;&#xE43;&#xE2B;&#xE49;&#xE40;&#xE25;&#xE37;&#xE2D;&#xE01;
           F0 &#xE04;&#xE23;&#xE31;&#xE1A; &#xE2A;&#xE48;&#xE07;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE44;&#xE14;&#xE49;
           30K &#xE04;&#xE23;&#xE31;&#xE49;&#xE07;/&#xE40;&#xE14;&#xE37;&#xE2D;&#xE19;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>![](../../.gitbook/assets/image%20%28165%29.png)
+  </thead>
+  <tbody></tbody>
+</table>
 
 3.เรียบร้อยครับ ที่เหลือก็แค่รอให้มันสร้าง Face Service จนเสร็จ
 
 ![](../../.gitbook/assets/deploying.png)
 
-## 🔥 \(2\) สร้าง PersonGroup 
+## 🔥 \(2\) สร้าง PersonGroup
 
 ในขั้นตอนนี้ผมจะสร้างโปรเจคของ C\# ขึ้นมา เพื่อเขียนโค้ดในการสร้าง PersonGroup ล่ะนะ ดังนั้นขอแบ่งเป็นหัวข้อย่อยๆนิดหน่อย
 
@@ -116,7 +121,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-ในตัวอย่างนี้การที่เราจะเรียกใช้ Face API เราจะต้องทำงานผ่าน REST API ธรรมดานี่แหละ ดังนั้นเพื่อความง่ายผมจะลง library เสริม 2 ตัวเพื่อให้ทำงานกับ REST API และ Json ได้ง่ายขึ้นครับ โดยใช้คำสั่งด้านล่างก็เป็นอันเสร็จสิ้นพิธี 
+ในตัวอย่างนี้การที่เราจะเรียกใช้ Face API เราจะต้องทำงานผ่าน REST API ธรรมดานี่แหละ ดังนั้นเพื่อความง่ายผมจะลง library เสริม 2 ตัวเพื่อให้ทำงานกับ REST API และ Json ได้ง่ายขึ้นครับ โดยใช้คำสั่งด้านล่างก็เป็นอันเสร็จสิ้นพิธี
 
 ```text
 dotnet add package RestSharp --version 106.6.10
@@ -139,8 +144,7 @@ dotnet add package Newtonsoft.Json
 
 ตอนนี้ให้เอาโค้ดด้านล่างไปทับใน `Program.cs` ทั้งหมดเลย ซึ่งเจ้าโค้ดด้านล่างจะเป็นแค่โครงคร่าวๆเท่านั้น
 
-{% code-tabs %}
-{% code-tabs-item title="Program.cs" %}
+{% code title="Program.cs" %}
 ```csharp
 using System;
 using System.Linq;
@@ -150,35 +154,33 @@ using RestSharp;
 
 namespace saladpuk_faceauth
 {
-	class Program
-	{
-		static string SubscriptionKey = "FACE_SUBSCRIPTION_KEY";
-		static string Endpoint = "FACE_ENDPOINT";
+    class Program
+    {
+        static string SubscriptionKey = "FACE_SUBSCRIPTION_KEY";
+        static string Endpoint = "FACE_ENDPOINT";
 
-		static void Main(string[] args)
-		{
-			var client = new RestClient(Endpoint);
+        static void Main(string[] args)
+        {
+            var client = new RestClient(Endpoint);
 
-			// เขียนโค้ดต่อที่นี่
-		}
-	}
+            // เขียนโค้ดต่อที่นี่
+        }
+    }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ในโค้ดด้านบน เราจะต้องไปเอา **SubscriptionKey** และ **Endpoint** มาใส่ให้มัน เพื่อที่มันจะได้ต่อไปยัง Face API ได้นั่นเอง ซึ่งเจ้าเราต้องกลับไปที่ Cognitive Service แล้วเลือกเมนู **`Keys`** เพื่อ copy ค่า SubscriptionKey มาครับ
 
-![](../../.gitbook/assets/image%20%28374%29.png)
+![](../../.gitbook/assets/image%20%28818%29.png)
 
 ส่วนค่า Endpoint เราสามารถเอาได้จากเมนู **`Overview`** ครับตามรูปเลย
 
-![](../../.gitbook/assets/image%20%28333%29.png)
+![](../../.gitbook/assets/image%20%28730%29.png)
 
 หลังจากที่เอา `SubscriptionKey` และ `Endpoint` ไปใส่ในโค้ดแล้ว ถัดไปเราก็จะเพิ่มโค้ดอีกนิสนุง เพื่อสร้าง **PersonGroup** นั่นเอง ตามโค้ดด้านล่างเบย
 
-{% code-tabs %}
-{% code-tabs-item title="Program.cs" %}
+{% code title="Program.cs" %}
 ```csharp
 static string SubscriptionKey = "729c47c3f04346dd904cac8ef8181412";
 static string Endpoint = "https://saladpuk-face.cognitiveservices.azure.com/face/v1.0";
@@ -204,7 +206,7 @@ static void Main(string[] args)
         Console.WriteLine($"Error: {createPersonGroupResult.Content}");
         return;
     }
-    
+
     // โค้ดขั้นตอนที่ 3 เอามาใส่ตรงนี้
 }
 
@@ -220,8 +222,7 @@ static RestRequest CreateRestRequest(string resource, object requestBody)
     return request;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **อธิบายโค้ด**  
 ในการสร้าง PersonGroup เราก็แค่เรียก REST API ไปโดยการส่ง SubscriptionKey ไปยัง Endpoint ของเราเพียงเท่านี้ก็จะสามารถสร้าง PersonGroup ได้แล้วครับ
@@ -230,8 +231,7 @@ static RestRequest CreateRestRequest(string resource, object requestBody)
 
 เพื่อให้ AI เรารู้จักคนได้หลายๆคน เราก็จะสร้าง Person ให้มันครับ โดยเขียนโค้ดตัวนี้ต่อเข้าไปใน method Main\(\)
 
-{% code-tabs %}
-{% code-tabs-item title="Program.cs" %}
+{% code title="Program.cs" %}
 ```csharp
 // สร้าง Person
 var personId = string.Empty;
@@ -252,8 +252,7 @@ else
     return;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **อธิบายโค้ด**  
 ผมทำการสร้าง Person ที่ชื่อ `Prayut Chan O Char` ขึ้นมาภายใต้ **PersonGroup** ที่สร้างขึ้นมาจากขั้นตอน 2.2 ครับ
@@ -262,10 +261,9 @@ else
 
 ถัดมาผมก็จะทำการอัพโหลดรูปคนเข้าไปใน Person โดยรูปที่ผมอัพโหลดเข้าไปจะเอามาจากเน็ทนะครับ ตามโค้ดและรูปด้านล่างเลย
 
-![&#xE16;&#xE49;&#xE32;&#xE44;&#xE21;&#xE48;&#xE40;&#xE2B;&#xE47;&#xE19;&#xE1C;&#xE21;&#xE40;&#xE02;&#xE35;&#xE22;&#xE19;&#xE1A;&#xE17;&#xE04;&#xE27;&#xE32;&#xE21;&#xE15;&#xE48;&#xE2D; &#xE01;&#xE47;&#xE41;&#xE2A;&#xE14;&#xE07;&#xE27;&#xE48;&#xE32;&#xE42;&#xE14;&#xE19;&#xE1B;&#xE23;&#xE31;&#xE1A;&#xE17;&#xE31;&#xE28;&#xE19;&#xE04;&#xE15;&#xE34;&#xE2D;&#xE22;&#xE39;&#xE48;&#xE19;&#xE30;](../../.gitbook/assets/image%20%2840%29.png)
+![&#xE16;&#xE49;&#xE32;&#xE44;&#xE21;&#xE48;&#xE40;&#xE2B;&#xE47;&#xE19;&#xE1C;&#xE21;&#xE40;&#xE02;&#xE35;&#xE22;&#xE19;&#xE1A;&#xE17;&#xE04;&#xE27;&#xE32;&#xE21;&#xE15;&#xE48;&#xE2D; &#xE01;&#xE47;&#xE41;&#xE2A;&#xE14;&#xE07;&#xE27;&#xE48;&#xE32;&#xE42;&#xE14;&#xE19;&#xE1B;&#xE23;&#xE31;&#xE1A;&#xE17;&#xE31;&#xE28;&#xE19;&#xE04;&#xE15;&#xE34;&#xE2D;&#xE22;&#xE39;&#xE48;&#xE19;&#xE30;](../../.gitbook/assets/image%20%2884%29.png)
 
-{% code-tabs %}
-{% code-tabs-item title="Program.cs" %}
+{% code title="Program.cs" %}
 ```csharp
 // อัพโหลดรูปคนที่จะใช้ในการยืนยันตัวตน
 Console.WriteLine("Uploading your images.");
@@ -301,8 +299,7 @@ foreach (var imgUrl in personImageUrls)
 }
 Console.WriteLine("-> All Done.");
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **อธิบายโค้ด**  
 อันนี้ผมสร้างลิสต์ของรูปขึ้นมา แล้วก็ทยอยอัพโหลดเข้าไปใน Person ทีละอันจนครบครับ
@@ -311,8 +308,7 @@ Console.WriteLine("-> All Done.");
 
 หลังจากที่เราอัพโหลดรูปไปเรียบร้อยแล้ว ถัดมาเราก็จะสั่งให้ AI ไปทำการเรียนรู้รูปพวกนั้น เพื่อสร้าง pattern ใบหน้าของคนใน PersonGroup ของเรา โดยผมก็จะเพิ่มโค้ดด้านล่างนี้เข้าไปครับ
 
-{% code-tabs %}
-{% code-tabs-item title="Program.cs" %}
+{% code title="Program.cs" %}
 ```csharp
 // สั่งให้ AI เรียนรู้หน้าตาของ Person (Train Model)
 Console.WriteLine("Training your model.");
@@ -327,8 +323,7 @@ else
     Console.WriteLine($"Error: {trainModelResult.Content}");
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **อธิบายโค้ด**  
 อันนี้ไม่มีอะไรเลยก็แค่เรียก REST API สั่งให้มัน Train ธรรมดา
@@ -342,80 +337,76 @@ else
 
 ในรอบนี้ผมก็จะลองส่งรูปที่ไม่ใช่หน้าลุงเข้าไปดูซิว่ามันจะ บอกว่ายังไงโดยใช้รูปและโค้ดด้านล่างนี้ครับ
 
-![&#xE25;&#xE2D;&#xE07;&#xE14;&#xE39;&#xE0B;&#xE34;&#xE27;&#xE48;&#xE32;&#xE04;&#xE19;&#xE19;&#xE35;&#xE49;&#xE08;&#xE30;&#xE41;&#xE2D;&#xE1A;&#xE21;&#xE32;&#xE2A;&#xE27;&#xE21;&#xE23;&#xE2D;&#xE22;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE25;&#xE38;&#xE07;&#xE44;&#xE14;&#xE49;&#xE44;&#xE2B;&#xE21;&#xE19;&#xE30; ?](../../.gitbook/assets/image%20%2867%29.png)
+![&#xE25;&#xE2D;&#xE07;&#xE14;&#xE39;&#xE0B;&#xE34;&#xE27;&#xE48;&#xE32;&#xE04;&#xE19;&#xE19;&#xE35;&#xE49;&#xE08;&#xE30;&#xE41;&#xE2D;&#xE1A;&#xE21;&#xE32;&#xE2A;&#xE27;&#xE21;&#xE23;&#xE2D;&#xE22;&#xE40;&#xE1B;&#xE47;&#xE19;&#xE25;&#xE38;&#xE07;&#xE44;&#xE14;&#xE49;&#xE44;&#xE2B;&#xE21;&#xE19;&#xE30; ?](../../.gitbook/assets/image%20%28143%29.png)
 
-{% code-tabs %}
-{% code-tabs-item title="Program.cs" %}
+{% code title="Program.cs" %}
 ```csharp
 static void Main(string[] args)
 {
     ...
-    
-	// ทดสอบว่ารูปคนอื่นสามารถยืนยันตัวตนได้หรือไม่
-	var thaksinResult = IdentifyAnImage(client, personGroupId, personId, "https://www.prachachat.net/wp-content/uploads/2017/09/13814050451381405054l.jpg");
-	Console.WriteLine($"The result from using Thaksin's image is: {thaksinResult}");
+
+    // ทดสอบว่ารูปคนอื่นสามารถยืนยันตัวตนได้หรือไม่
+    var thaksinResult = IdentifyAnImage(client, personGroupId, personId, "https://www.prachachat.net/wp-content/uploads/2017/09/13814050451381405054l.jpg");
+    Console.WriteLine($"The result from using Thaksin's image is: {thaksinResult}");
 }
 
 static bool IdentifyAnImage(RestClient client, string personGroupId, string personId, string imagePath)
 {
-	var detectFaceRequest = CreateRestRequest("detect?returnFaceId=true", new
-	{
-		url = imagePath,
-	});
-	var detectFaceResult = client.Execute(detectFaceRequest, Method.POST);
-	if (detectFaceResult.StatusCode == HttpStatusCode.OK)
-	{
-		var faceId = JArray.Parse(detectFaceResult.Content).First["faceId"].ToString();
-		var verifyRequest = CreateRestRequest("verify", new
-		{
-			faceId = faceId,
-			personId = personId,
-			personGroupId = personGroupId,
-		});
-		var verifyResult = client.Execute(verifyRequest, Method.POST);
-		if (verifyResult.StatusCode == HttpStatusCode.OK)
-		{
-			var confidenceText = JObject.Parse(verifyResult.Content)["confidence"].ToString();
-			var confidence = double.Parse(confidenceText);
-			return confidence >= 0.75;
-		}
-		else
-		{
-			Console.WriteLine($"Error: {verifyResult.Content}");
-			return false;
-		}
-	}
-	else
-	{
-		Console.WriteLine($"Error: {detectFaceResult.Content}");
-		return false;
-	}
+    var detectFaceRequest = CreateRestRequest("detect?returnFaceId=true", new
+    {
+        url = imagePath,
+    });
+    var detectFaceResult = client.Execute(detectFaceRequest, Method.POST);
+    if (detectFaceResult.StatusCode == HttpStatusCode.OK)
+    {
+        var faceId = JArray.Parse(detectFaceResult.Content).First["faceId"].ToString();
+        var verifyRequest = CreateRestRequest("verify", new
+        {
+            faceId = faceId,
+            personId = personId,
+            personGroupId = personGroupId,
+        });
+        var verifyResult = client.Execute(verifyRequest, Method.POST);
+        if (verifyResult.StatusCode == HttpStatusCode.OK)
+        {
+            var confidenceText = JObject.Parse(verifyResult.Content)["confidence"].ToString();
+            var confidence = double.Parse(confidenceText);
+            return confidence >= 0.75;
+        }
+        else
+        {
+            Console.WriteLine($"Error: {verifyResult.Content}");
+            return false;
+        }
+    }
+    else
+    {
+        Console.WriteLine($"Error: {detectFaceResult.Content}");
+        return false;
+    }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **อธิบายโค้ด**  
 ในรอบนี้ผมก็จะส่งรูปคนอื่นเข้าไปเทียบกับลุงแล้วเช็คว่ามีความใกล้เคียงกันกี่เปอร์เซ็นต์ ซึ่งในโค้ดผมบอกว่าต้องใกล้เคียงกัน 75% ขึ้นไปนะถึงจะผ่าน
 
 สุดท้ายผมก็ลองเพิ่มโค้ดเพื่อเอารูปลุงแกไปตรวจสอบจริงๆละ โด้ยใช้รูปที่ไม่เคยส่งให้ AI เห็นมาก่อน และใช้โค้ดตามด้านล่างนี้
 
-![&#xE1B;&#xE4A;&#xE32;&#xE22;&#xE17;&#xE31;&#xE28;&#xE19;&#xE30;&#xE28;&#xE36;&#xE01;&#xE29;&#xE32;&#xE0B;&#xE31;&#xE01;&#xE40;&#xE14;&#xE37;&#xE2D;&#xE19;&#xE44;&#xE21;&#xE4A; ?](../../.gitbook/assets/image%20%2872%29.png)
+![&#xE1B;&#xE4A;&#xE32;&#xE22;&#xE17;&#xE31;&#xE28;&#xE19;&#xE30;&#xE28;&#xE36;&#xE01;&#xE29;&#xE32;&#xE0B;&#xE31;&#xE01;&#xE40;&#xE14;&#xE37;&#xE2D;&#xE19;&#xE44;&#xE21;&#xE4A; ?](../../.gitbook/assets/image%20%28151%29.png)
 
-{% code-tabs %}
-{% code-tabs-item title="Program.cs" %}
+{% code title="Program.cs" %}
 ```csharp
 static void Main(string[] args)
 {
     ...
-    
+
     // ทดสอบว่ารูปที่ถูกต้องสามารถยืนยันตัวตนได้หรือไม่
     var prayutResult = IdentifyAnImage(client, personGroupId, personId, "https://www.thairath.co.th/media/NjpUs24nCQKx5e1EaLUGBbZOOxIXurh1BCeiRWkxZwq.jpg");
     Console.WriteLine($"The result from using Prayut's image is: {prayutResult}");
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 **อธิบายโค้ด**  
 ก็ตรงตัวครับแค่เอารูปลุงไปตรวจสอบว่าเป็นคนเดียวกับรูปที่เราส่งไปให้ AI หรือเปล่า
@@ -469,6 +460,4 @@ The result from using Prayut's image is: True
 **Cognitive Services Library**  
 สำหรับคนที่ต้องการเขียนทำงานกับ Cognitive Services จริงๆไม่ต้องไปนั่งเขียนเชื่อม API ทีละตัวก็ได้นะ เพราะทาง Microsoft นั้นได้มี Library ให้เราสามารถเรียกใช้ได้เลยครับ เช่นในฝั่ง .NET ก็จะมีตัวนี้ **Microsoft.Azure.CognitiveServices.Vision.Face** ที่สามารถติดตั้งแล้วใช้งานได้เลย
 {% endhint %}
-
-
 

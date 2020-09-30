@@ -10,40 +10,19 @@ description: เวลาที่มีอัพเดทอะไรใหม�
 สำหรับใครที่ไม่อยากพลาดอัพเดทบทความใหม่ๆ สามารถเข้าไปกด Like เพื่อรับข่าวสารใหม่ๆจาก [**Facebook Blog: Mr.Saladpuk**](https://www.facebook.com/mr.saladpuk) ได้นะครับ 😍
 {% endhint %}
 
-### 12/10/2019
+{% hint style="info" %}
+ช่วงนี้งานของ **ดช.แมวน้ำ** เยอะม๊วก เลยไม่ค่อยได้อัพเดทบทความเท่าไหร่นะจ๊ะ แต่จะค่อยๆทยอยลงเรื่อยๆเมื่อมีโอกาศ ส่วนใครที่ด่วนอยากได้ความรู้ตรงไหนก็ทัก Facebook ส่วนตัวมาได้นะกั๊ฟ
+{% endhint %}
 
-* อัพเดทบทความ [👦 Bottlenecks of Software](https://saladpuk.gitbook.io/learn/basic/bottlenecks) เรื่อง [พื้นฐานที่สำคัญที่สุดของฐานข้อมูล](https://saladpuk.gitbook.io/learn/basic/bottlenecks/work-with-db)
+### 25/09/2020
 
-### 11/10/2019
+* เพิ่มบทความ [🔐 **HTTPS in a nutshell**](https://www.saladpuk.com/basic/security101/https-in-a-nutshell) - อธิบาย HTTPS แบบละเอียดยิบในภาษาชาวบ้าน
 
-* อัพเดทบทความ [👦 Agile Methodology](https://saladpuk.gitbook.io/learn/basic/agile-methodology) เรื่อง [Software Development Life Cycle](https://saladpuk.gitbook.io/learn/basic/agile-methodology/sdlc)
+### 20/09/2020
 
-### 10/10/2019
+* เพิ่มบทความ [😎 **The Matrix 2**](https://www.saladpuk.com/basic/security101/the-matrix-2) - สรุปปมหนังในแง่มุมของ Computer Security กันโหน่ย
 
-* อัพเดทบทความ [👦 Agile Methodology](https://saladpuk.gitbook.io/learn/basic/agile-methodology) เรื่อง [Agile in a Nutshell](https://saladpuk.gitbook.io/learn/basic/agile-methodology/agile-in-a-nutshell)
+### 18/09/2020
 
-### 09/10/2019
-
-* ตั้งคอร์ส [👦 Agile Methodology](https://saladpuk.gitbook.io/learn/basic/agile-methodology)
-
-### 05/10/2019
-
-* อัพเดทบทความ [👶 Microservices พื้นฐาน](https://saladpuk.gitbook.io/learn/basic/microservices) เรื่อง [จาก Monolith สู่ Microservices](https://saladpuk.gitbook.io/learn/basic/microservices/monolith-services)
-
-### 04/10/2019
-
-* อัพเดทบทความ [👶 Microservices พื้นฐาน](https://saladpuk.gitbook.io/learn/basic/microservices) เรื่อง [Microservices Tips](https://saladpuk.gitbook.io/learn/basic/microservices/tips)
-
-### 03/10/2019
-
-* อัพเดทบทความ [👶 Microservices พื้นฐาน](https://saladpuk.gitbook.io/learn/basic/microservices) เรื่อง [Microservices มีลักษณะยังไง](https://saladpuk.gitbook.io/learn/basic/microservices/microservices)
-
-### 02/10/2019
-
-* เขียนบทความ [👶 Microservices พื้นฐาน](https://saladpuk.gitbook.io/learn/basic/microservices)
-* ตั้งคอร์ส [👶 Azure Service Fabric](https://saladpuk.gitbook.io/learn/cloud/azure-service-fabric)
-
-### 01/10/2019
-
-* อัพเดทบทความ [👶 UML พื้นฐาน](https://saladpuk.gitbook.io/learn/basic/uml) เรื่อง [บทสรุปการใช้ UML](https://saladpuk.gitbook.io/learn/basic/uml/summary)
+* เพิ่มบทความ [😎 **The Matrix 1**](https://www.saladpuk.com/basic/security101/the-matrix-1) - สรุปปมหนังในแง่มุมของ Computer Security กันโหน่ย
 
